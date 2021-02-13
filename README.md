@@ -9,7 +9,7 @@ Date of the original leak: 7th April 2020.
 
 You are free to use this code to learn more about Discord bots and Dyno.
 
-Modules used: 
+Some of the modules used: 
 
 
 ``` 
