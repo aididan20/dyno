@@ -1,0 +1,123 @@
+---
+name: Dyno
+author: NoobLance#0002
+version: 4.0.0
+lib: eris
+poweredBy: Dyno
+
+# prefixes
+prefix: '?'
+sudopref: '$'
+localPrefix: 
+adminPrefix: d.
+
+test: true
+state: 0
+stateName: Default
+logLevel: debug
+isPremium: false
+
+# cluster/sharding
+clusterCount: 1
+shardingStrategy: shared
+firstShardOverride: 0
+lastShardOverride: 0
+shardCountOverride: 1
+clusterIds: 
+shardIds: 
+
+# client config
+client:
+  id: ''
+  secret: ''
+  token: ''
+  userid: ''
+  game: dynobot.net | ?help
+  admin: '155037590859284481'
+  fetchAllUsers: false
+  disableEveryone: false
+  maxCachedMessages: 10
+
+
+snowgate:
+  host: ''
+
+site:
+  host: http://localhost
+  port: 80
+  listen_port: 8000
+
+mongo:
+  dsn: mongodb://localhost/discordbot
+
+redis:
+  host: localhost
+  port: 6379
+  auth: ''
+
+sentry:
+  dsn: ''
+  logLevel: error
+
+statsd:
+  host: ''
+  port: 4280
+  prefix: dyno.dev.
+
+emojis:
+  success: '<:dynoSuccess:314691591484866560>'
+  error: '<:dynoError:314691684455809024>'
+
+# bot list config
+carbon:
+  key: ''
+  url: https://www.carbonitex.net/discord/data/botdata.php
+  list: https://www.carbonitex.net/discord/api/listedbots.php
+  info: https://www.carbonitex.net/discord/api/bot/info?id=155149108183695360
+dbots:
+  key: ''
+  url: https://bots.discord.pw/api/bots/155149108183695360/stats
+dbl:
+  key: ''
+  url: https://discordbots.org/api/bots/155149108183695360/stats
+botspace:
+  key: ''
+  url: https://botlist.space/spi/bots/
+cleverbot:
+  key: ''
+
+invite: https://discord.gg/9W6EG56
+avatar: https://cdn.dyno.gg/dyno-v3x1024.png
+
+dynoGuild: '203039963636301824'
+guildLog: '205567372021465088'
+largeGuildLog: '243639503749775360'
+testGuilds:
+- '203039963636301824'
+- '155149443606380545'
+
+shardWebhook: https://canary.discordapp.com/api/webhooks/263596728299683850/fygpIRg8pcD9nLPL2MxUjK8mupD6dnLfzA1eIwocoD_MnFzba1noE0sXY4XY_ZNfkPtt
+cluster:
+  webhookUrl: https://canary.discordapp.com/api/webhooks/263596728299683850/fygpIRg8pcD9nLPL2MxUjK8mupD6dnLfzA1eIwocoD_MnFzba1noE0sXY4XY_ZNfkPtt
+
+disableHeartbeat: true
+logCommands: false
+handleRegion: false
+regions: []
+disableEvents:
+- TYPING_START
+
+enabledCommandGroups: 
+disabledCommandGroups: 
+
+disableHelp: false
+maxStreamLimit: 4000
+maxSongLength: 5400
+maxPlayingTime: 14400000
+streamLimitThreshold: 86400
+
+modules:
+- AdminHandler
+- CommandHandler
+- ShardStatus
+- Dyno

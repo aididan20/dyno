@@ -1,0 +1,131 @@
+---
+# prefixes
+prefix: "?"
+sudopref: "$"
+localPrefix: 
+adminPrefix: d.
+
+env: 'prod'
+test: false
+state: 3
+stateName: Prod
+logLevel: info
+
+isCore: true
+isPremium: false
+
+# sharding
+clusterCount: 1
+shardingStrategy: balanced
+firstShardOverride: 
+lastShardOverride: 
+shardCountOverride: 
+
+# client
+client:
+  id: ''
+  secret: ''
+  token: ''
+  userid: ''
+  game: dynobot.net | ?help
+  admin: '155037590859284481'
+  fetchAllUsers: false
+  disableEveryone: false
+  maxCachedMessages: 10
+  lazyChunking: true
+
+snowgate:
+  host: ''
+
+site:
+  host: http://localhost
+  port: 80
+  listen_port: 8000
+
+mongo:
+  dsn: mongodb://localhost/discordbot
+
+redis:
+  host: localhost
+  port: 6379
+  auth: ''
+
+sentry:
+#  dsn: https://dedbe1a9f79c4b7384dacf0514235665:3a855fbfa7b24ee0ae4cfa98b5f3da3f@sentry.davinci.sh/8
+  logLevel: error
+
+statsd:
+  host: ''
+  port: 4280
+  prefix: dyno.dev.
+
+emojis:
+  success: "<:dynoSuccess:314691591484866560>"
+  error: "<:dynoError:314691684455809024>"
+
+carbon:
+  key: ''
+  url: https://www.carbonitex.net/discord/data/botdata.php
+  list: https://www.carbonitex.net/discord/api/listedbots.php
+  info: https://www.carbonitex.net/discord/api/bot/info?id=155149108183695360
+
+dbots:
+  key: ''
+  url: https://bots.discord.pw/api/bots/155149108183695360/stats
+
+dbl:
+  key: ''
+  url: https://discordbots.org/api
+
+invite: https://discord.gg/9W6EG56
+avatar: http://cdn.dyno.gg/dyno-av-v3x1024.png
+
+dynoGuild: '203039963636301824'
+guildLog: '205567372021465088'
+largeGuildLog: '243639503749775360'
+
+# webhooks
+blockWebhook: https://canary.discordapp.com/api/webhooks/543125066133798922/zm5dAE84tmfsAJuh7vP4uW2fGIbhVOU1sBJdr5i-uTojreaEVLTWzTdKjzpddCrj2qWw
+shardWebhook: https://canary.discordapp.com/api/webhooks/511859673171886090/vC_L2tARlJIdIEFOnpJQPFTPPZ1gzA8LUoEaRQnXBCFK1sDXHKHPJ2mWF6XaTNwIrbhz
+cluster:
+   webhookUrl: https://canary.discordapp.com/api/webhooks/511859572617773078/HR9nzO1SbIbg6Wdy2TebJU9gngDg-vY_iPqX2L_WjzUkT74HbknKP4qiJN69pluUKG95
+
+disableHeartbeat: true
+disableHelp: false
+logCommands: false
+handleRegion: false
+disableEvents:
+- TYPING_START
+maxStreamLimit: 4000
+maxSongLength: 5400
+maxPlayingTime: 14400000
+streamLimitThreshold: 86400
+
+modules:
+- AdminHandler
+- CommandHandler
+- Manager
+- ShardStatus
+- Lavalink
+- Dyno
+- ActionLog
+- Announcements
+- Automod
+- Automessage
+- Autopurge
+- Autoroles
+- Autoresponder
+- CustomCommands
+- AFK
+- Moderation
+- Music
+- Reminders
+- Tags
+- VoiceTextLinking
+- Streams
+- Fun
+- Cleverbot
+- CoordsChannel
+- ERM
+- MessageEmbedder
+- Slowmode

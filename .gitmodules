@@ -1,0 +1,3 @@
+[submodule "translations"]
+	path = translations
+	url = git@github.com:FlexLabs/dyno-translations.git
